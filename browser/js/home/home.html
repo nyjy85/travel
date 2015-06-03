@@ -1,0 +1,13 @@
+<section id="home">
+    <div class="col-md-8" ng-controller="MapController">
+    	<div id="map-canvas"></div>
+    </div>
+    <div class="col-md-4">
+    	 <div class="col-md-12">Instagram</div>
+    	 <div ng-controller="WikiController" class="col-md-12">
+    	 	<h3>{{location}}</h3>
+    	 	<p>{{summary | limitTo: 700}}...</p>
+    	 </div>
+    </div>
+   
+</section>
