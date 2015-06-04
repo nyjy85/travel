@@ -17,4 +17,4 @@ app.directive('popOver', function($compile){
 });
 
 //use ng-hide to hide the overlay on click (on click set some scope value to true)
-scope.subelement = $compile(newDirective)(scope)
+// scope.subelement = $compile(newDirective)(scope)
