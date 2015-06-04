@@ -12,13 +12,3 @@ app.factory('WikiFactory', function($http, $rootScope){
 		}
 	}
 });
-
-// app.factory('InstaFactory', function($http){
-// 	return {
-// 		getInstaPics: function(location){
-// 			var concatAll = location.split(" ").join("");
-// 			var justFirstWord = location.split(" ")[0];
-// 			return $http.get('api/insta/getInsta')
-// 		}
-// 	}
-// })

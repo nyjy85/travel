@@ -2,12 +2,22 @@
     <div class="col-md-8" ng-controller="MapController">
     	<div id="map-canvas"></div>
     </div>
-    <div class="col-md-4">
-    	 <div class="col-md-12">Instagram</div>
-    	 <div ng-controller="WikiController" class="col-md-12">
+
+    <div ng-controller="SideBarController" class="col-md-4">
+    	 <div class="col-md-12">
+            <h3>Images of {{location}}</h3>
+            <div ng-repeat="result in results | limitTo: 9">
+            <!-- <p>{{result.images.thumbnail.url}}</p> -->
+                <!-- <a href="{{result.images.standard_resolution.url}}"> --><img pop-over class="images img-rounded" src="{{result.images.thumbnail.url}}" />
+                <!-- </a> -->
+            </div>
+         </div>
+
+    	 <div class="col-md-12">
     	 	<h3>{{location}}</h3>
     	 	<p>{{summary | limitTo: 700}}...</p>
     	 </div>
+
     </div>
    
 </section>
