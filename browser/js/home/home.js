@@ -26,6 +26,13 @@ app.controller('SideBarController', function ($scope, InstaFactory, WikiFactory)
 		});
 	});	
 });
+
+app.controller('TestController', function ($scope, $compile){
+	$scope.clicked = false;
+	$scope.setClick = function(){
+		$scope.clicked = true;
+	}
+});
 // the instagram controller 
 // app.controller('InstaController', function ($scope, InstaFactory, GoogleMap){
 // 	$scope.$on('ggggggg', function(ev, data){})
