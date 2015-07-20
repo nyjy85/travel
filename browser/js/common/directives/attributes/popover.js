@@ -7,10 +7,7 @@ app.directive('popOver', function($compile){
 				var overlay  = $compile('<div ng-click="setClick()" ng-hide="clicked" id="overlay"></div>')(scope);
 				var overlay2 = angular.element(overlay).append('<img id="inst-img" src="'+element.attr('src')+'"/>');
 				angular.element(document.body).append(overlay2)
-				// var overlay = angular.element('<div ng-click="setClick()" ng-hide="clicked" id="overlay"></div>')
-				// 				.append('<img id="inst-img" src="'+element.attr('src')+'"/>');
-				// angular.element(document.body).append(overlay);
-				console.log('cliocked the image', element.attr('src'));	
+				console.log('clicked the image', element.attr('src'));	
 			});
 		}
 	};
