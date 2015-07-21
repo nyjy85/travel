@@ -2,7 +2,6 @@
 var router = require('express').Router();
 module.exports = router;
 
-router.use('/tutorial', require('./tutorial'));
 router.use('/members', require('./members'));
 router.use('/wiki', require('./wiki'));
 router.use('/insta', require('./insta'));

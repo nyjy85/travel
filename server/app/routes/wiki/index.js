@@ -4,13 +4,6 @@ var Wiki = require('wikijs');
 var wiki = new Wiki();
 
 router.get('/getWiki', function(req, res){
-	// wiki.geoSearch(40.820045086716505, -73.50128173828125).then(function(page){
-	// 	console.log('results from the geosearch page', page);
-	// });
-
-	// wiki.search(location).then(function(results){
-	// 	console.log('these are the results from the search', results)
-	// });
 
 	var location = req.query.location;
 	
